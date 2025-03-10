@@ -1,0 +1,55 @@
+.ShopNow{
+    position: fixed;
+    top: 50%;
+    left: 97%;
+
+    z-index: 1000;
+    transform: translate(-50%, -50%) rotate(90deg);
+    cursor: pointer;
+
+    width: 130px;
+    height: 30px;
+    padding-top: 2px;
+    background-color: rgb(25, 25, 25);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* background-color: rgb(30, 30, 30); */
+    border-radius: 5px;
+}
+.ShopNow .Text{
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+
+    background-image: url('BACKTEXTUREDESSERTS.png'); /* Your image */
+    background-size: 100px 100px;
+    background-position: center center;
+    background-clip: text; /* Clip the background image to the text */
+    color: transparent; /* Make the text itself transparent so the background image is visible */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    animation: ShopNowAime 5s infinite alternate ease-in-out;
+}
+
+@keyframes ShopNowAnime {
+    from{
+        background-image: url('BACKTEXTUREDESSERTS.png'); /* Your image */
+        background-size: 100px 100px;
+        background-position: center center;
+        background-clip: text; /* Clip the background image to the text */
+        color: transparent; /* Make the text itself transparent so the background image is visible */
+    }
+    to{
+        background-image: url('BACKTEXTUREDESSERTS.png'); /* Your image */
+        background-size: 2000px 200px;
+        background-position: top center;
+        background-clip: text; /* Clip the background image to the text */
+        color: transparent; /* Make the text itself transparent so the background image is visible */
+    }
+}

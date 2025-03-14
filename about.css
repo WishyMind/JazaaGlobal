@@ -1,0 +1,468 @@
+.About {
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: url(About.png) top center no-repeat;
+    background-size: cover;
+
+    margin-top: -1px;
+    z-index: 1000;
+}
+
+.About .ContainerFirst {
+    width: 50%;
+    height: 100%;
+
+    /* background-color: #ffffff80; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ContainerFirst .CircleFirst {
+    position: absolute;
+    transform: translate(-50px, 135px);
+    width: 200px;
+
+    /* background-color: #fff; */
+    z-index: 0;
+}
+
+.ContainerFirst .CircleFirst img {
+    width: 100%;
+    height: 100%;
+}
+
+.ContainerFirst .CircleSecond {
+    position: absolute;
+    transform: translate(-170px, -145px);
+    width: 150px;
+
+    /* background-color: #fff; */
+    z-index: 0;
+}
+
+.ContainerFirst .CircleSecond img {
+    width: 100%;
+    height: 100%;
+}
+
+.About .ContainerFirst .BoxFirst {
+    width: 50%;
+    height: 400px;
+    /* background-color: rgb(200,200,100); */
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    padding-right: 15px;
+    z-index: 1;
+}
+
+.About .ContainerFirst .BoxFirst .Picture {
+    width: 200px;
+    height: 380px;
+    background-image: url(07121634e027a9c.jpg);
+    background-size: cover;
+    background-position: -70px center;
+
+    border-radius: 20px;
+}
+
+.About .ContainerFirst .BoxSecond {
+    width: 50%;
+    height: 400px;
+    /* background-color: rgb(200, 100, 100); */
+    z-index: 1;
+}
+
+.About .ContainerFirst .BoxSecond .TextFirst {
+    /* background-color: #fff; */
+
+    font-weight: bolder;
+    font-size: 48px;
+    color: rgb(70, 70, 70, 1);
+    text-transform: uppercase;
+
+    margin-top: 30px;
+}
+
+.About .ContainerFirst .BoxSecond .TextSecond {
+    /* background-color: #ffffffca; */
+
+    font-weight: bolder;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+
+    margin-top: -10px;
+    padding-left: 240px;
+}
+
+.About .ContainerFirst .BoxSecond .TextThird {
+    /* background-color: #ffffff82; */
+
+    font-weight: normal;
+    font-size: 12px;
+    color: rgb(200, 200, 200);
+    text-align: justify;
+
+    margin-top: 25px;
+    padding-left: 15px;
+
+    line-height: 15px;
+}
+
+.About .ContainerFirst .BoxSecond .TextFourth {
+    /* background-color: #ffffff3d; */
+
+
+    font-weight: normal;
+    font-size: 12px;
+    color: rgb(255, 202, 128);
+    text-transform: uppercase;
+
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.About .ContainerSecond {
+    width: 50%;
+    height: 100%;
+
+    /* background-color: #ffffff3d; */
+}
+
+.About .ContainerSecond .MainContainer {
+    width: 100%;
+    height: 100%;
+
+    /* background-color: #ba60603d; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.About .ContainerSecond .MainContainer .ColumnFirst {
+    width: 100px;
+    height: 500px;
+
+    /* background-color: #ffffff45; */
+    overflow-y: hidden;
+
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50px,
+            rgba(0, 0, 0, 1) 150px, rgba(0, 0, 0, 1) calc(100% - 150px),
+            rgba(0, 0, 0, 0) calc(100% - 50px));
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50px,
+            rgba(0, 0, 0, 1) 150px, rgba(0, 0, 0, 1) calc(100% - 150px),
+            rgba(0, 0, 0, 0) calc(100% - 50px));
+
+    perspective: 200px;
+}
+
+.About .ContainerSecond .MainContainer .ColumnFirst .Box {
+    /* position: absolute; */
+    width: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    animation: ColumnFirstAnime 12s infinite alternate linear;
+
+    /* transform: rotateY(10Deg) */
+}
+
+@keyframes ColumnFirstAnime {
+    from{
+        transform: translateY(-90px) rotateY(10Deg);
+    }
+    to{
+        transform: translateY(90px) rotateY(-10Deg);
+    }
+}
+
+
+.About .ContainerSecond .MainContainer .ColumnFirst .Box .Items {
+    width: 90px;
+    height: 120px;
+    background-size: cover;
+    background-position: center center;
+
+    margin: 5px 0px;
+    border-radius: 5px;
+}
+
+.About .ContainerSecond .MainContainer .ColumnFirst .Box .Items1 {
+    background-image: url(Image/BlueberryJelly_3000x.webp);
+}
+
+.About .ContainerSecond .MainContainer .ColumnFirst .Box .Items2 {
+    background-image: url(Image/Coca-Powder_3000x.webp);
+}
+
+.About .ContainerSecond .MainContainer .ColumnFirst .Box .Items3 {
+    background-image: url(Image/Badam-Kheer_3000x\ \(1\).webp);
+}
+
+.About .ContainerSecond .MainContainer .ColumnFirst .Box .Items4 {
+    background-image: url(Image//MangoCustard_png_3000x.webp);
+}
+
+.About .ContainerSecond .MainContainer .ColumnSecond {
+    width: 100px;
+    height: 500px;
+
+    /* background-color: #ffffffb3; */
+    overflow-y: hidden;
+
+    
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50px,
+            rgba(0, 0, 0, 1) 150px, rgba(0, 0, 0, 1) calc(100% - 150px),
+            rgba(0, 0, 0, 0) calc(100% - 50px));
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50px,
+            rgba(0, 0, 0, 1) 150px, rgba(0, 0, 0, 1) calc(100% - 150px),
+            rgba(0, 0, 0, 0) calc(100% - 50px));
+
+    perspective: 200px;
+}
+
+.About .ContainerSecond .MainContainer .ColumnSecond .Box {
+    /* position: absolute; */
+    width: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    animation: ColumnSecondAnime 12s infinite alternate linear;
+
+    /* transform: rotateY(10Deg) */
+}
+
+@keyframes ColumnSecondAnime {
+    from{
+        transform: translateY(110px) rotateY(-10Deg);
+    }
+    to{
+        transform: translateY(-110px) rotateY(10Deg);
+    }
+}
+.About .ContainerSecond .MainContainer .ColumnSecond .Box .Items {
+    width: 90px;
+    height: 120px;
+    background-size: cover;
+    background-position: center center;
+
+    margin: 5px 0px;
+    border-radius: 5px;
+}
+
+.About .ContainerSecond .MainContainer .ColumnSecond .Box .Items1 {
+    background-image: url(Image/5Kg-Elite-Basmati-Rice_3476d28f-008a-492c-b08a-ac015644ac55_3000x\ \(1\).webp);
+}
+
+.About .ContainerSecond .MainContainer .ColumnSecond .Box .Items2 {
+    background-image: url(Image/5KG-Sela-Rice-Gold_3000x\ \(1\).webp);
+}
+
+.About .ContainerSecond .MainContainer .ColumnSecond .Box .Items3 {
+    background-image: url(Image/Bombay-Biryani_3000x.webp);
+}
+
+.About .ContainerSecond .MainContainer .ColumnSecond .Box .Items4 {
+    background-image: url(Image/RedChilli_1_3000x.webp);
+}
+
+.About .ContainerSecond .MainContainer .ColumnSecond .Box .Items5 {
+    background-image: url(Image/5KG-Sela-Rice-Gold_3000x\ \(1\).webp);
+}
+
+.About .ContainerSecond .MainContainer .ColumnSecond .Box .Items6 {
+    background-image: url(Image/Rozmarrah-5kg_3000x.webp);
+}
+
+.About .ContainerSecond .MainContainer .ColumnSecond .Box .Items7 {
+    background-image: url(Image/Kifayat_3000x.webp);
+}
+
+.About .ContainerSecond .MainContainer .ColumnSecond .Box .Items8 {
+    background-image: url(Image/Classic_1_3000x.webp);
+}
+
+.About .ContainerSecond .MainContainer .ColumnSecond .Box .Items9 {
+    background-image: url(Image/1.5Kg-Brown-Rice-Jar_3000x\ \(1\).webp);
+}
+
+.About .ContainerSecond .MainContainer .ColumnThird {
+    width: 100px;
+    height: 500px;
+
+    /* background-color: #ffffff27; */
+    overflow-y: hidden;
+
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50px,
+    rgba(0, 0, 0, 1) 150px, rgba(0, 0, 0, 1) calc(100% - 150px),
+    rgba(0, 0, 0, 0) calc(100% - 50px));
+-webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50px,
+    rgba(0, 0, 0, 1) 150px, rgba(0, 0, 0, 1) calc(100% - 150px),
+    rgba(0, 0, 0, 0) calc(100% - 50px));
+
+    perspective: 200px;
+}
+
+.About .ContainerSecond .MainContainer .ColumnThird .Box {
+    /* position: absolute; */
+    width: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    animation: ColumnThirdAnime 12s infinite alternate linear;
+
+    /* transform: rotateY(10Deg) */
+}
+
+@keyframes ColumnThirdAnime {
+    from{
+        transform: translateY(-100px) rotateY(10Deg);
+    }
+    to{
+        transform: translateY(100px) rotateY(-10Deg);
+    }
+}
+
+.About .ContainerSecond .MainContainer .ColumnThird .Box .Items {
+    width: 90px;
+    height: 120px;
+    background-size: cover;
+    background-position: center center;
+
+    margin: 5px 0px;
+    border-radius: 5px;
+}
+
+.About .ContainerSecond .MainContainer .ColumnThird .Box .Items1 {
+    background-image: url(Image/Cornflour_3000x.webp);
+}
+
+.About .ContainerSecond .MainContainer .ColumnThird .Box .Items2 {
+    background-image: url(Image/Friedonion_3000x\ \(1\).webp);
+}
+
+.About .ContainerSecond .MainContainer .ColumnThird .Box .Items3 {
+    background-image: url(Image/Ispaghol_3000x.webp);
+}
+
+.About .ContainerSecond .MainContainer .ColumnThird .Box .Items4 {
+    background-image: url(Image/MeatTend_3000x.webp);
+}
+
+.About .ContainerSecond .MainContainer .ColumnThird .Box .Items5 {
+    background-image: url(Image/Pheni_3000x.webp);
+}
+
+.About .ContainerSecond .MainContainer .ColumnThird .Box .Items6 {
+    background-image: url(Image/Jazaa_Dates_3000x.webp);
+}
+
+.About .ContainerSecond .MainContainer .ColumnThird .Box .Items7 {
+    background-image: url(Image/Vermicelli-150-g_3000x.webp);
+}
+
+.About .ContainerSecond .MainContainer .ColumnThird .Box .Items8 {
+    background-image: url(Image/Vermicelli100g_1e33ab42-1500-4eda-84c7-797f876c6441_3000x.webp);
+}
+
+.About .ContainerSecond .MainContainer .ColumnThird .Box .Items9 {
+    background-image: url(Image/Baking-Powder_3000x.webp);
+}
+
+.About .ContainerSecond .MainContainer .ColumnFourth {
+    width: 100px;
+    height: 500px;
+
+    /* background-color: #ffffff76; */
+    overflow-y: hidden;
+
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50px,
+    rgba(0, 0, 0, 1) 150px, rgba(0, 0, 0, 1) calc(100% - 150px),
+    rgba(0, 0, 0, 0) calc(100% - 50px));
+-webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50px,
+    rgba(0, 0, 0, 1) 150px, rgba(0, 0, 0, 1) calc(100% - 150px),
+    rgba(0, 0, 0, 0) calc(100% - 50px));
+
+    perspective: 200px;
+}
+
+.About .ContainerSecond .MainContainer .ColumnFourth .Box {
+    /* position: absolute; */
+    width: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    animation: ColumnFourthAnime 12s infinite alternate linear;
+
+    /* transform: rotateY(10Deg) */
+}
+
+@keyframes ColumnFourthAnime {
+    from{
+        transform: translateY(120px) rotateY(-10Deg);
+    }
+    to{
+        transform: translateY(-120px) rotateY(10Deg);
+    }
+}
+
+.About .ContainerSecond .MainContainer .ColumnFourth .Box .Items {
+    width: 90px;
+    height: 120px;
+    background-size: cover;
+    background-position: center center;
+
+    margin: 5px 0px;
+    border-radius: 5px;
+}
+
+.About .ContainerSecond .MainContainer .ColumnFourth .Box .Items1 {
+    background-image: url(Image/Pink-Salt-500g_3000x.webp);
+}
+
+.About .ContainerSecond .MainContainer .ColumnFourth .Box .Items2 {
+    background-image: url(Image/Pink-Salt-800g-Coarse_3000x.webp);
+}
+
+.About .ContainerSecond .MainContainer .ColumnFourth .Box .Items3 {
+    background-image: url(Image/Pink-Salt-200-G-GLass-Grinder_3000x.webp);
+}
+
+.About .ContainerSecond .MainContainer .ColumnFourth .Box .Items4 {
+    background-image: url(Image/Mix-Nimco_3000x.webp);
+}
+
+.About .ContainerSecond .MainContainer .ColumnFourth .Box .Items5 {
+    background-image: url(Image/Refined-Salt-800g_3000x.webp);
+}
+
+.About .ContainerSecond .MainContainer .ColumnFourth .Box .Items6 {
+    background-image: url(Image/Pink-Salt-500g_3000x.webp);
+}
+
+.Talks{
+    height: 100vh;
+    width: 100%;
+}

@@ -1,0 +1,1089 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+a{
+    z-index: 1000;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* Width and height of the scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+/* Scrollbar track (background area) */
+::-webkit-scrollbar-track {
+    background: #181818;
+}
+
+/* Scrollbar thumb (movable part) */
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 199, 121);
+    border-radius: 10px;
+}
+
+/* Scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 199, 121);
+}
+
+/* Corner where vertical & horizontal scrollbars meet */
+::-webkit-scrollbar-corner {
+    background: #1a1a1a;
+}
+
+.Landing{
+    width: 100%;
+    height: 100vh;
+
+    background-image: url(Image/Rectangle\ 1.png);
+    background-size: cover;
+    background-position: top;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.RangeFirstBackground{
+    background-image: url(BackgroundForFirstRange.png);
+    background-color: rgb(30, 30, 30);
+    animation: RangeFirstBackgroundAnime 1s 1 forwards ease-in-out;
+}
+
+@keyframes RangeFirstBackgroundAnime {
+    from{
+        background-position: center -200px;
+        background-size: 150vw 170vh;
+    }
+    to{
+        background-position: center center;
+        background-size: 100vw 120vh;
+    }
+}
+
+.RangeSecondBackground{
+    background-image: url(BackgroundForSecondRange.png);
+    background-color: rgb(30, 30, 30);
+    animation: RangeSecondBackgroundAnime 1s 1 forwards ease-in-out;
+}
+
+@keyframes RangeSecondBackgroundAnime {
+    from{
+        background-position: center -200px;
+        background-size: 150vw 170vh;
+    }
+    to{
+        background-position: center center;
+        background-size: 100vw 120vh;
+    }
+}
+
+.RangeThirdBackground{
+    background-image: url(BackgroundForThirdRange.png);
+    background-color: rgb(30, 30, 30);
+    animation: RangeThirdBackgroundAnime 1s 1 forwards ease-in-out;
+}
+
+@keyframes RangeThirdBackgroundAnime {
+    from{
+        background-position: center -200px;
+        background-size:  130vw 1300px;
+    }
+    to{
+        background-position: center -300px;
+        background-size:  100vw 1000px;
+    }
+}
+
+.RangeFourthBackground{
+    background-image: url(BackgroundForFourthRange.png);
+    background-color: rgb(235, 235, 235);
+    animation: RangeFourthBackgroundAnime 1s 1 forwards ease-in-out;
+}
+
+@keyframes RangeFourthBackgroundAnime {
+    from{
+        background-position: center -400px;
+        background-size:  130vw 1300px;
+    }
+    to{
+        background-position: center -400px;
+        background-size:  100vw 1000px;
+    }
+}
+
+.RangeFifthBackground{
+    background-image: url(Slice\ 3\ \(1\).png);
+    background-color: rgb(30, 30, 30);
+    background-position: center -300px;
+    background-size:  100vw 1000px;
+    animation: RangeFifthBackgroundAnime 1s 1 forwards ease-in-out;
+}
+
+@keyframes RangeFifthBackgroundAnime {
+    from{
+        background-position: center 0px;
+        background-size:  130vw 1300px;
+    }
+    to{
+        background-position: center -130px;
+        background-size:  100vw 1000px;
+    }
+}
+
+
+@keyframes LandingAanime {
+    from{
+        background-position: center -200px;
+        background-size: 200vw 200vh;
+    }
+
+    to{
+        background-position: center center;
+        background-size: 100vw 120vh;
+    }
+}
+
+.Landing .Main_Header{
+    width: 100%;
+    height: 120px;
+
+    z-index: 1;
+}
+
+.Landing .Main_Header .Container{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.Landing .Main_Header .Container .Logo{
+    width: 200px !important;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* background-color: #fff; */
+}
+
+.Landing .Main_Header .Container .Logo img{
+    width: 150px;
+    user-select: none;
+    cursor: pointer;
+
+    animation: LogoAnimeStart 0.5s 1 forwards ease-in-out, LogoAnimeStartOpacity 2s 1 forwards ease-in-out;
+}
+
+@keyframes LogoAnimeStart {
+    from{
+        width: 200px;
+    }
+    to{
+        width: 90px;
+    }
+}
+
+@keyframes LogoAnimeStartOpacity {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.Landing .Main_Header .Container .First{
+    width: 500px !important;
+    /* background-color: #cb7d7d; */
+    opacity: 0;
+    animation: BoxAnimestart1 0.8s 1 forwards ease-in-out 0.3s, BoxAnimestartOpacity 1s 1 forwards ease-in-out 0.3s;
+    animation-composition: add;
+}
+.Landing .Main_Header .Container .Second{
+    width: 500px !important;
+    /* background-color: rgb(200, 20, 190); */
+    opacity: 0;
+    animation: BoxAnimestart2 0.8s 1 forwards ease-in-out 0.3s, BoxAnimestartOpacity 1s 1 forwards ease-in-out 0.3s;
+    animation-composition: add;
+}
+
+@keyframes BoxAnimestart1 {
+    from{
+        transform: translate(5%,0%);
+    }
+    to{
+        transform: translate(0%,0%);
+    }
+}
+
+@keyframes BoxAnimestart2 {
+    from{
+        transform: translate(-5%,0%);
+    }
+    to{
+        transform: translate(0%,0%);
+    }
+}
+
+@keyframes BoxAnimestartOpacity {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.Landing .Main_Header .Container .First ul{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.Landing .Main_Header .Container .Second ul{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+
+.Landing .Main_Header .Container .Box ul li{
+    text-decoration: none;
+    list-style: none;
+    user-select: none;
+
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+
+    transition: 0.50s;
+}
+
+.Landing .Main_Header .Container .Box ul .Become{
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-color: rgba(237, 179, 99, 1);
+    /* width: 100px; */
+    padding: 8px 6px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: 0.35s;
+}
+
+.Landing .Main_Header .Container .Box ul .Become:hover{
+    color: white;
+    background-color: rgb(255, 202, 128);
+}
+
+.Landing .Main_Header .Container .Box ul li:hover{
+    color: rgb(255, 202, 128);
+}
+
+.Landing .Main_Header .Container .Box ul li:active{
+    /* color: rgb(0, 0, 0); */
+}
+
+.Landing .Main_Header .Container .Box ul .line{
+    width: 2px;
+    height: 10px;
+
+
+    background-color: rgba(237, 179, 99, 1);
+    margin: 0 0px;
+    margin-bottom: 3px;
+
+    animation: LineAnime 1s 1 forwards ease-in-out 0.1s;
+}
+
+@keyframes LineAnime {
+    from{
+        margin: 0 0px;
+    }
+    to{
+        margin: 0 11px;
+    }
+}
+
+.Slider{
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 500px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    z-index: 1000;
+
+    animation: SliderAnimeStart 1s 1 forwards ease-in-out 0.5s;
+}
+
+.Slider .Changer{
+    width: 30px;
+    height: 6px;
+    background-color: rgb(0, 0, 0);
+
+    border-radius: 4px;
+    margin: 0px 5px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.Slider .First_Slider{
+    background-color: #f2f2f2;
+}
+
+@keyframes SliderAnimeStart {
+    from{
+        opacity: 0;
+        /* width: 0px; */
+    }
+    to{
+        opacity: 1;
+        /* width: 500px; */
+    }
+}
+
+.Landing .Title{
+    width: 100vw;
+    height: 100px;
+    /* background-color: rgba(255, 255, 255, 0.249); */
+
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Landing .Title .Text{
+    text-align: center;
+    display: none;
+}
+
+.RangeFirstBackground .Title .FirstText{
+    color: white;
+    font-size: 52px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 52px; /* Adjust the font size */
+    font-weight: bold; /* Bold text */
+    background-image: url('BACKTEXTUREPLAINSPICE.png'); /* Your image */
+    background-size: 1000px 100px;
+    background-position: center center;
+    background-clip: text; /* Clip the background image to the text */
+    color: transparent; /* Make the text itself transparent so the background image is visible */
+    display: flex;
+
+    opacity: 0;
+    user-select: none;
+
+    animation: TextAnimeStart 1s 1 forwards ease-in-out 0.5s ,TextAnime 4s infinite alternate ease-in-out;;
+}
+.RangeSecondBackground .Title .SecondText{
+    color: white;
+    font-size: 52px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 52px; /* Adjust the font size */
+    font-weight: bold; /* Bold text */
+    background-image: url('BACKTEXTUREDESSERTS.png'); /* Your image */
+    background-size: 1000px 100px;
+    background-position: center center;
+    background-clip: text; /* Clip the background image to the text */
+    color: transparent; /* Make the text itself transparent so the background image is visible */
+    display: flex;
+
+    opacity: 0;
+    user-select: none;
+
+    animation: TextAnimeStart 1s 1 forwards ease-in-out 0.5s ,TextAnime 4s infinite alternate ease-in-out;
+}
+
+.RangeThirdBackground .Title .ThirdText{
+    color: white;
+    font-size: 52px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 52px; /* Adjust the font size */
+    font-weight: bold; /* Bold text */
+    background-image: url('BACKTEXTURETEADELIGHTS.png'); /* Your image */
+    background-size: 1000px 100px;
+    background-position: center center;
+    background-clip: text; /* Clip the background image to the text */
+    color: transparent; /* Make the text itself transparent so the background image is visible */
+    display: flex;
+
+    opacity: 0;
+    user-select: none;
+
+    animation: TextAnimeStart 1s 1 forwards ease-in-out 0.5s ,TextAnime 4s infinite alternate ease-in-out;
+}
+
+.RangeFourthBackground .Title .FourthText{
+    color: white;
+    font-size: 52px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 52px; /* Adjust the font size */
+    font-weight: bold; /* Bold text */
+    background-image: url('BACKTEXTURERICE.png'); /* Your image */
+    background-size: 1000px 100px;
+    background-position: center center;
+    background-clip: text; /* Clip the background image to the text */
+    color: transparent; /* Make the text itself transparent so the background image is visible */
+    display: flex;
+
+    opacity: 0;
+    user-select: none;
+
+    animation: TextAnimeStart 1s 1 forwards ease-in-out 0.5s ,TextAnime 4s infinite alternate ease-in-out;
+}
+
+.RangeFifthBackground .Title .FifthText{
+    color: white;
+    font-size: 52px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 52px; /* Adjust the font size */
+    font-weight: bold; /* Bold text */
+    background-image: url('BlackCurrentJelly_3000x\ 2.png'); /* Your image */
+    background-size: 1000px 100px;
+    background-position: center center;
+    background-clip: text; /* Clip the background image to the text */
+    color: transparent; /* Make the text itself transparent so the background image is visible */
+    display: flex;
+
+    opacity: 0;
+    user-select: none;
+
+    animation: TextAnimeStart 1s 1 forwards ease-in-out 0.5s ,TextAnime 4s infinite alternate ease-in-out;
+}
+
+@keyframes TextAnimeStart {
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes TextAnime {
+    from{
+        background-size: 600px 200px;
+    }
+    to{
+        background-size: 1000px 500px;
+    }
+}
+
+.Landing .Area{
+    width: 100%;
+    height: 500px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    /* position: absolute; */
+
+    /* overflow: hidden; */
+}
+
+.Landing .Area .First{
+    width: 100%;
+    height: 240px;
+    position: absolute;
+    opacity: 0;
+
+    animation: ShapeAnime 1.2s 1 forwards ease-in-out;
+}
+
+.Landing .Area .Second{
+    width: 100%;
+    height: 220px;
+    position: absolute;
+    opacity: 0;
+    animation: ShapeBAnime 1s 1 forwards ease-in-out;
+}
+
+@keyframes ShapeBAnime {
+    from{
+        transform: translateY(400px);
+        width: 100%;
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes ShapeAnime {
+    from{
+        transform: translateY(400px);
+        width: 100%;
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0%);
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+.Landing .Area .Animation_Item_Plain_Spice{
+    display: none;
+
+    animation: ItemAnimeStart 1s 1 forwards ease-in-out;
+}
+
+.RangeFirstBackground .Area .Animation_Item_Plain_Spice{
+    z-index: 1000;
+    height: 500px;
+    /* background-color: #ffffff50; */
+    max-width: 800px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    z-index: 1000;
+    user-select: none;
+    cursor: pointer;
+
+    animation: ItemAnimeStart 1s 1 forwards ease-in-out;
+}
+
+@keyframes ItemAnimeStart {
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.Animation_Item_Plain_Spice .items1{
+    height: 500px;
+    transform: translateY(-30px);
+    position: absolute;
+
+    animation: Items1Aanime 5s infinite ease-in-out alternate;
+    animation-composition: add;
+}
+
+.Animation_Item_Plain_Spice .items2{
+    position: absolute;
+    animation: Items2Aanime 5s infinite ease-in-out alternate;
+}
+
+.Animation_Item_Plain_Spice .items3{
+    position: absolute;
+    animation: Items3Aanime 5s infinite ease-in-out alternate;
+}
+
+.Animation_Item_Plain_Spice .items4{
+    position: absolute;
+    animation: Items4Aanime 5s infinite ease-in-out alternate;
+}
+
+.Animation_Item_Plain_Spice .items5{
+    position: absolute;
+    z-index: -1;
+    animation: Items5Aanime 5s infinite ease-in-out alternate;
+}
+
+.Animation_Item_Plain_Spice .items6{
+    position: absolute;
+    z-index: 1;
+    animation: Items6Aanime 5s infinite ease-in-out alternate;
+}
+@keyframes Items1Aanime {
+    from{
+        transform: translate(0px, 0px) rotate(-1deg);
+    }
+    to{
+        transform: translate(10px, -10px) rotate(1deg);
+    }
+}
+
+@keyframes Items2Aanime {
+    from{
+        transform: translate(-80px, 100px) rotate(-4deg);
+    }
+    to{
+        transform: translate(-90px, 120px) rotate(3deg);
+    }
+}
+
+@keyframes Items3Aanime {
+    from{
+        transform: translate(-125px, -80px) rotate(10deg);
+    }
+    to{
+        transform: translate(-140px, -110px) rotate(0deg);
+    }
+}
+
+@keyframes Items4Aanime {
+    from{
+        transform: translate(125px, -110px) rotate(10deg);
+    }
+    to{
+        transform: translate(140px, -80px) rotate(0deg);
+    }
+}
+
+@keyframes Items5Aanime {
+    from{
+        transform: translate(115px, -20px) rotate(10deg);
+    }
+    to{
+        transform: translate(130px, -10px) rotate(-10deg);
+    }
+}
+
+@keyframes Items6Aanime {
+    from{
+        transform: translate(100px, 100px) rotate(10deg);
+    }
+    to{
+        transform: translate(110px, 110px) rotate(-10deg);
+    }
+}
+
+
+
+.Landing .Area .Animation_Item_Desserts{
+    display: none;
+
+    animation: ItemAnimeStart 1s 1 forwards ease-in-out;
+}
+
+.RangeSecondBackground .Area .Animation_Item_Desserts{
+    z-index: 1000;
+    height: 565px;
+    /* background-color: #ffffff50; */
+    max-width: 800px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    user-select: none;
+    cursor: pointer;
+
+    animation: ItemAnimeStart 1s 1 forwards ease-in-out;
+}
+
+.Animation_Item_Desserts .items1{
+    height: 500px;
+    transform: translateY(-30px);
+    position: absolute;
+
+    animation: Items1Aanime_Second 5s infinite ease-in-out alternate;
+    animation-composition: add;
+}
+
+.Animation_Item_Desserts .items2{
+    position: absolute;
+    transform: translate(-80px, 110px) rotate(0deg);
+    animation: Items2Aanime_Second 5s infinite ease-in-out alternate;
+}
+
+.Animation_Item_Desserts .items3{
+    position: absolute;
+    z-index: -1;
+    animation: Items3Aanime_Second 5s infinite ease-in-out alternate;
+}
+
+.Animation_Item_Desserts .items4{
+    position: absolute;
+    z-index: 1;
+    animation: Items4Aanime_Second 5s infinite ease-in-out alternate;
+}
+
+.Animation_Item_Desserts .items5{
+    position: absolute;
+    z-index: -1;
+    animation: Items5Aanime_Second 5s infinite ease-in-out alternate;
+}
+
+.Animation_Item_Desserts .items6{
+    position: absolute;
+    z-index: 1;
+    animation: Items6Aanime_Second 5s infinite ease-in-out alternate;
+}
+@keyframes Items1Aanime_Second {
+    from{
+        transform: translate(0px, 0px) rotate(-1deg);
+    }
+    to{
+        transform: translate(10px, -10px) rotate(1deg);
+    }
+}
+
+@keyframes Items2Aanime_Second {
+    from{
+        transform: translate(-80px, 150px) rotate(-4deg);
+    }
+    to{
+        transform: translate(-90px, 160px) rotate(3deg);
+    }
+}
+
+@keyframes Items3Aanime_Second {
+    from{
+        transform: translate(-125px, -80px) rotate(10deg);
+    }
+    to{
+        transform: translate(-140px, -110px) rotate(0deg);
+    }
+}
+
+@keyframes Items4Aanime_Second {
+    from{
+        transform: translate(80px, -60px) rotate(10deg);
+    }
+    to{
+        transform: translate(90px, -50px) rotate(0deg);
+    }
+}
+
+@keyframes Items5Aanime_Second {
+    from{
+        transform: translate(150px, -20px) rotate(10deg);
+    }
+    to{
+        transform: translate(160px, -10px) rotate(-10deg);
+    }
+}
+
+@keyframes Items6Aanime_Second {
+    from{
+        transform: translate(100px, 140px) rotate(10deg);
+    }
+    to{
+        transform: translate(110px, 150px) rotate(-10deg);
+    }
+}
+
+.Landing .Area .Animation_Item_TeaDelights{
+    display: none;
+
+    animation: ItemAnimeStart 1s 1 forwards ease-in-out;
+}
+
+
+.RangeThirdBackground .Area .Animation_Item_TeaDelights{
+    z-index: 1000;
+    height: 565px;
+    /* background-color: #ffffff50; */
+    max-width: 800px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    user-select: none;
+    cursor: pointer;
+
+    animation: ItemAnimeStart 1s 1 forwards ease-in-out;
+}
+
+.Animation_Item_TeaDelights .items1{
+    height: 330px;
+    transform: translateY(35px);
+    position: absolute;
+
+    animation: Items1Aanime_Third 5s infinite ease-in-out alternate;
+    animation-composition: add;
+}
+
+.Animation_Item_TeaDelights .items2{
+    height: 160px;
+    position: absolute;
+    animation: Items2Aanime_Third 5s infinite ease-in-out alternate;
+}
+
+.Animation_Item_TeaDelights .items3{
+    height: 220px;
+    position: absolute;
+    z-index: -1;
+    animation: Items3Aanime_Third 5s infinite ease-in-out alternate;
+}
+
+.Animation_Item_TeaDelights .items4{
+    height: 160px;
+    position: absolute;
+    z-index: 1;
+    animation: Items4Aanime_Third 5s infinite ease-in-out alternate;
+}
+
+@keyframes Items1Aanime_Third {
+    from{
+        transform: translate(0px, 0px) rotate(-1deg);
+    }
+    to{
+        transform: translate(10px, -10px) rotate(1deg);
+    }
+}
+
+@keyframes Items2Aanime_Third {
+    from{
+        transform: translate(-100px, 150px) rotate(-3deg);
+    }
+    to{
+        transform: translate(-110px, 160px) rotate(3deg);
+    }
+}
+
+@keyframes Items3Aanime_Third {
+    from{
+        transform: translate(-210px, -20px) rotate(-30deg);
+    }
+    to{
+        transform: translate(-220px, -30px) rotate(-35deg);
+    }
+}
+
+@keyframes Items4Aanime_Third {
+    from{
+        transform: translate(210px, 130px) rotate(-30deg);
+    }
+    to{
+        transform: translate(220px, 120px) rotate(-35deg);
+    }
+}
+
+.Landing .Area .Animation_Item_Rice{
+    display: none;
+
+    animation: ItemAnimeStart 1s 1 forwards ease-in-out;
+}
+
+
+.RangeFourthBackground .Area .Animation_Item_Rice{
+    z-index: 1000;
+    height: 565px;
+    /* background-color: #ffffff50; */
+    max-width: 800px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    user-select: none;
+    cursor: pointer;
+
+    animation: ItemAnimeStart 1s 1 forwards ease-in-out;
+}
+
+.Animation_Item_Rice .items1{
+    height: 430px;
+    transform: translateY(55px);
+    position: absolute;
+
+    animation: Items1Aanime_Fourth 5s infinite ease-in-out alternate;
+    animation-composition: add;
+}
+
+.Animation_Item_Rice .items2{
+    height: 200px;
+    position: absolute;
+    z-index: -1;
+    animation: Items2Aanime_Fourth 5s infinite ease-in-out alternate;
+}
+
+.Animation_Item_Rice .items3{
+    height: 320px;
+    position: absolute;
+    z-index: -1;
+    animation: Items3Aanime_Fourth 5s infinite ease-in-out alternate;
+}
+
+.Animation_Item_Rice .items4{
+    height: 180px;
+    position: absolute;
+    z-index: 1;
+    animation: Items4Aanime_Fourth 5s infinite ease-in-out alternate;
+}
+
+@keyframes Items1Aanime_Fourth {
+    from{
+        transform: translate(0px, 0px) rotate(-1deg);
+    }
+    to{
+        transform: translate(10px, -10px) rotate(1deg);
+    }
+}
+
+@keyframes Items2Aanime_Fourth {
+    from{
+        transform: translate(120px, 100px) rotate(-3deg);
+    }
+    to{
+        transform: translate(130px, 90px) rotate(9deg);
+    }
+}
+
+@keyframes Items3Aanime_Fourth {
+    from{
+        transform: translate(-210px, -20px) rotate(-30deg);
+    }
+    to{
+        transform: translate(-220px, -30px) rotate(-35deg);
+    }
+}
+
+@keyframes Items4Aanime_Fourth {
+    from{
+        transform: translate(-50px, 150px) rotate(0deg);
+    }
+    to{
+        transform: translate(-60px, 140px) rotate(3deg);
+    }
+}
+.Landing .Area .Animation_Item_RecipeMix{
+    display: none;
+
+    animation: ItemAnimeStart 1s 1 forwards ease-in-out;
+}
+
+
+.RangeFifthBackground .Area .Animation_Item_RecipeMix{
+    z-index: 1000;
+    height: 565px;
+    /* background-color: #ffffff50; */
+    max-width: 800px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    user-select: none;
+    cursor: pointer;
+
+    animation: ItemAnimeStart 1s 1 forwards ease-in-out;
+}
+
+.Animation_Item_RecipeMix .items1{
+    height: 450px;
+    transform: translateY(5px);
+    position: absolute;
+
+    animation: Items1Aanime_Fifth 5s infinite ease-in-out alternate;
+    animation-composition: add;
+}
+
+.Animation_Item_RecipeMix .items2{
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    animation: Items2Aanime_Fifth 5s infinite ease-in-out alternate;
+}
+
+.Animation_Item_RecipeMix .items3{
+    height: 120px;
+    position: absolute;
+    z-index: -1;
+    animation: Items3Aanime_Fifth 5s infinite ease-in-out alternate;
+}
+
+.Animation_Item_RecipeMix .items4{
+    height: 280px;
+    position: absolute;
+    z-index: -1;
+    animation: Items4Aanime_Fifth 5s infinite ease-in-out alternate;
+}
+
+.Animation_Item_RecipeMix .items5{
+    height: 120px;
+    position: absolute;
+    z-index: 1;
+    animation: Items5Aanime_Fifth 5s infinite ease-in-out alternate;
+}
+
+@keyframes Items1Aanime_Fifth {
+    from{
+        transform: translate(0px, 0px) rotate(-1deg);
+    }
+    to{
+        transform: translate(10px, -10px) rotate(1deg);
+    }
+}
+
+@keyframes Items2Aanime_Fifth {
+    from{
+        transform: translate(110px, 110px) rotate(-3deg);
+    }
+    to{
+        transform: translate(120px, 100px) rotate(9deg);
+    }
+}
+
+@keyframes Items3Aanime_Fifth {
+    from{
+        transform: translate(120px, -20px) rotate(-30deg);
+    }
+    to{
+        transform: translate(130px, -30px) rotate(-80deg);
+    }
+}
+
+@keyframes Items4Aanime_Fifth {
+    from{
+        transform: translate(-30px, 10px) rotate(0deg);
+    }
+    to{
+        transform: translate(-40px, 20px) rotate(3deg) scale(1.2);
+    }
+}
+
+@keyframes Items5Aanime_Fifth {
+    from{
+        transform: translate(-80px, 140px) rotate(0deg);
+    }
+    to{
+        transform: translate(-90px, 150px) rotate(3deg);
+    }
+}
